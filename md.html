@@ -14,6 +14,27 @@
 /* Please visit the URL below for more information: */
 /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
 
+/*弹出动画的css */
+ #popup {
+	       position: fixed;
+	       bottom: 50%;
+	       left: 50%;
+	       transform: translate(-50%, 50%);
+	       background-color: #fff;
+	       padding: 20px;
+	       border-radius: 5px; /* 可以保留圆角效果，如果不需要可以改为0 */
+	       box-shadow: none; /* 去掉边框阴影效果 */
+	       opacity: 0;
+	       visibility: hidden;
+	       transition: transform 0.5s, opacity 0.5s;
+	   }
+	   
+	   #popup.show {
+	       opacity: 1;
+	       visibility: visible;
+	       transform: translate(-50%, -50%) translateY(-20px);
+	   }
+            
       </style>
       <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function () {
