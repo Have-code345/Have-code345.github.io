@@ -122,6 +122,31 @@ ___<br>
       
     
     
+    <div id="popup">你好</div>
+    <script>
+        document.addEventListener('click', function() {
+            var popup = document.getElementById('popup');
+            
+            // 重置状态，确保每次点击都从初始状态开始动画
+            popup.classList.remove('show');
+            void popup.offsetWidth; // 触发重绘，确保过渡效果正确应用
+            popup.style.visibility = 'visible'; // 确保在动画前是可见的，以便过渡能正常触发
+    
+            // 使用 setTimeout 确保在下一帧应用类，从而触发 CSS 过渡
+            setTimeout(() => {
+                popup.classList.add('show');
+            }, 10);
+    
+            // 设置定时器在动画结束后隐藏元素，并准备下一次动画
+            setTimeout(() => {
+                popup.classList.remove('show');
+                // 在过渡结束后，延迟一点时间再设置 visibility 为 hidden，以确保动画完整
+                setTimeout(() => {
+                    popup.style.visibility = 'hidden';
+                }, 500); // 与 CSS 过渡时间一致
+            }, 1000); // 1秒后开始淡出（包含0.5秒上升和0.5秒淡出）
+        });
+    </script>
     
     
     
