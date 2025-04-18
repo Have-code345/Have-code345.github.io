@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>个人博客,开发中...</title>
-	</head>
-	<body>
-	<ul>
-		
-	<li><a href="md.html" target="_blank" rel="noopener noreferrer">markdown简单使用方法</a></li>
-	<li><a href="PrefixAndDifference.html" target="_blank" rel="noopener noreferrer">前缀和差分</a></li>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客，待开发中...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-bar {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+        }
+        .nav-bar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-bar li {
+            display: inline; /* 将列表项设置为 inline，使它们在同一行显示 */
+            margin-right: 15px; /* 添加间距 */
+        }
+        .nav-bar a {
+            color: darkgrey; /* 继承父元素的字体颜色 */
+            text-decoration: none; /* 去掉下划线 */
+        }
+        .nav-bar a:hover {
+          color: white;
+        }
+    </style>
+</head>
+<body>
 
-	<li><a href="MyLittleQtProjects.html" target="_blank" rel="noopener noreferrer">qt小项目以及一些常见问题总结</li>
-	</ul>
-	</body>
+<div class="nav-bar">
+    <ul>
+        <li><a href="md.html" target="_blank" rel="noopener noreferrer">mark的使用方法</a></li>
+        <li><a href="PrefixAnDifference.html" target="_blank" rel="noopener noreferrer">前缀和与差分</a></li>
+        <li>
+			<a href="MyLittleQtProjects.html" target="_blank" rel="noopener noreferrer">qt小项目和常见的一些问题</a
+		</li>
+        <li><a href="#">算法</a></li>
+    </ul>
+</div>
+
+<script>
+    function toggleVisibility(id) {
+        // 示例：这里可以根据需要实现子菜单的显示/隐藏逻辑
+        alert('子菜单逻辑可以在这里实现，当前ID: ' + id);
+    }
+</script>
+
+</body>
 </html>
