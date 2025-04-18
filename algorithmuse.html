@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一些算法练习</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            color: white;
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar li {
+            padding: 15px;
+            cursor: pointer;
+        }
+        .sidebar li:hover {
+            background-color: #34495e;
+        }
+        .sidebar .nested {
+            display: none;
+            padding-left: 20px;
+            background-color: #34495e;
+        }
+        .sidebar .active {
+            display: block;
+        }
+		/*设置超链接样式*/
+		a{
+			color: inherit; /* 继承父元素的字体颜色 */
+			text-decoration: none; /* 去掉下划线 */
+		}
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <ul>
+        <li>
+		<a href="index.html"_blank" rel="noopener noreferrer">首页</a>
+		</li>
+        <li >
+         <a href="PrefixAnDifference.html" target="_blank" rel="noopener noreferrer">前缀和与差分</a>   
+        </li>
+        <li>
+		<a href="PrefixAnDifference.html" target="_blank" rel="noopener noreferrer">算法2</a> 
+        </li>
+        <li>算法3</li>
+        <li>算法4</li>
+    </ul>
+</div>
+
+<script>
+    function toggleVisibility(id) {
+        const element = document.getElementById(id);
+        element.classList.toggle('active');
+    }
+
+   
+    
+</script>
+
+</body>
+</html>
